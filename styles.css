@@ -1,0 +1,269 @@
+ /* General Styles */
+ body {
+    background: linear-gradient(to right, skyblue, rgb(216, 137, 227));
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+}
+
+.menu-btn {
+    position: relative;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    float: left;
+}
+
+.menu-content {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    width: 200px;
+}
+
+.menu-content a {
+    display: block;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+.menu-content a:hover {
+    background: #f0f0f0;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+    color: #6a0dad;
+}
+
+/* Tabs Section */
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.tab {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+.tab i {
+    font-size: 24px;
+    color: #6a0dad;
+}
+
+.tab:hover {
+    background: #f0f0f0;
+}
+
+/* Content Section */
+.content {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.content-item {
+    display: none;
+}
+
+.post {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.post input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    border-radius: 5px;
+    outline: none;
+    background-color: transparent;
+}
+
+.post button {
+    width: 100px;
+    padding: 10px;
+    background: #6a0dad;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.post button:hover {
+    background: #5a0c8e;
+}
+
+/* Search Bar for Explore Tab */
+.search-bar {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.search-bar input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background: #6a0dad;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background: #5a0c8e;
+}
+
+/* Messages in Inbox */
+.message-box {
+    max-height: 300px;
+    overflow-y: auto;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.message {
+    background: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+.chat-controls {
+    display: flex;
+    align-items: center;
+}
+
+.chat-controls input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.chat-controls button {
+    padding: 10px;
+    background: #6a0dad;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.chat-controls button:hover {
+    background: #5a0c8e;
+}
+
+.post-item {
+    background: transparent;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 1px solid white;
+    border-bottom: 5px solid white;
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.post-header span {
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    margin-top: 45%;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer p {
+    margin: 0;
+    color: #6a0dad;
+}
+.profile-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.ProfilePic {
+    background-color: rgb(214, 183, 222);
+    padding: 25px;
+    border-radius: 50%;
+    margin-right: 15px; /* Espacio entre la imagen y el nombre */
+    width: 25px; /* Tamaño de la imagen */
+    height: 25px; /* Tamaño de la imagen */
+}
+
+#profile-name {
+    margin: 0; /* Elimina el margen predeterminado */
+    font-size: 24px; /* Ajusta el tamaño de la fuente si es necesario */
+    color: #6a0dad; /* Ajusta el color si es necesario */
+}
+.ProfilePic {
+    width: 20px;
+    height: 20px; 
+    border-radius: 50%; 
+    background-color: #e2a1e9; 
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold; 
+    text-transform: uppercase;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}

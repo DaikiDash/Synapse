@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="ISP.css">
+    <title>Synapse.com</title>
+    <script>
+        function handleSignIn(event) {
+            event.preventDefault(); // Previene el envío del formulario
+
+            // Obtener los valores de los campos del formulario
+            const username = document.querySelector('input[name="username"]').value;
+            const password = document.querySelector('input[name="password"]').value;
+
+            // Validar que todos los campos están llenos
+            if (!username || !password) {
+                alert('Please enter both username and password.');
+                return;
+            }
+
+            // Guardar el nombre de usuario en localStorage
+            localStorage.setItem('username', username);
+
+            // Redirige a la página de perfil de usuario
+            window.location.href = 'UPP.html';
+        }
+    </script>
+</head>
+<body>
+    <h1>SYNAPSE</h1>
+    <div class="Form">
+        <form onsubmit="handleSignIn(event)">
+            <input type="text" name="username" placeholder="Username">
+            <input type="password" name="password" placeholder="Password">
+            <input type="submit" value="Sign in">
+        </form>
+        <hr class="separator">
+        <form>
+            <p>Don't have an account?</p>
+            <input type="button" value="Register" onclick="window.location.href='IRP.html';">
+        </form>
+    </div>
+</body>
+</html>

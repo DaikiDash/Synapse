@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User_Synapse.com</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+            <button class="menu-btn" onclick="toggleMenu()">☰ Menu</button>
+            <div id="menu-content" class="menu-content">
+                <a href="#settings">Settings</a>
+                <a href="#help">Help</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="profile-container">
+                <h1 id="profile-name"></h1>
+                <div class="ProfilePic" id="profile-pic"></div>
+            </div>
+            
+    </header>
+    
+
+    <main>
+        <section class="tabs">
+            <div class="tab" onclick="showContent('home')">☙Home❧</div>
+            <div class="tab" onclick="showContent('explore')">☙Explore❧</div>
+            <div class="tab" onclick="showContent('inbox')">☙Inbox❧</div>
+            <div class="tab" onclick="showContent('profile')">☙Profile❧</div>
+        </section>
+
+        <section class="content">
+            <div id="home" class="content-item">
+                <div class="post">
+                    <input type="text" id="post-input" placeholder="What's on your mind?">
+                    <button onclick="publishPost()">Publish</button>
+                </div>
+                <div id="post-feed"></div>
+            </div>
+
+            <div id="explore" class="content-item">
+                <h2>Explore</h2>
+                <div class="search-bar">
+                    <input type="text" id="search-input" placeholder="Search...">
+                    <button onclick="search()">Buscar</button>
+                </div>
+                <div id="search-results"></div>
+            </div>
+
+            <div id="inbox" class="content-item">
+                <h2>Inbox</h2>
+                <p>Your messages will appear here.</p>
+            </div>
+                <h2>Your Profile</h2>
+                <p>This is your profile section.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Copyright - Synapse Inc.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

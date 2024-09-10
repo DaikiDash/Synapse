@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="ISP.css">
+    <title>Synapse.com</title>
+</head>
+<body>
+    <h1>SYNAPSE</h1>
+    <div class="Form">
+        <form id="registrationForm">
+            <input type="text" id="username" name="username" placeholder="Username">
+            <input type="email" id="email" name="email" placeholder="Email address">
+            <input type="password" id="password" name="password" placeholder="Password">
+            <input type="password" id="repeatPassword" name="repeatPassword" placeholder="Repeat password">
+            <input type="button" value="Register" onclick="handleSubmit()">
+            <input type="button" value="Back" onclick="window.location.href='IBP.html';">
+        </form>
+    </div>
+
+    <!-- Modal for success message -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">&times;</span>
+            <p>Registered successfully!</p>
+            <h3>Enjoy uwu</h3>
+        </div>
+    </div>
+
+    <script src="formHandler.js"></script>
+</body>
+</html>
