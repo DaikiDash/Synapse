@@ -1,11 +1,14 @@
-body {
-    background: linear-gradient(to right, skyblue, rgb(216, 137, 227));
-}
 
+.logo{
+   
+   margin-bottom: -25px;
+}
 h1 {
+
     background-color: white;
-    color: #6a0dad;
+    color: #ad0d0d;
     margin: 2% auto; 
+    margin-top: 5%;
     padding-bottom: 10px; 
     padding-top: 10px;
     text-align: center;
@@ -16,7 +19,6 @@ h1 {
 }
 
 .Form {
-    position: relative;
     background-color: white;
     margin-left: 25%;
     margin-right: 25%;
@@ -55,7 +57,7 @@ input[type="submit"], input[type="button"] {
     margin-bottom: 5%;
     width: 50%;
     padding: 10px 20px;
-    background-color: rgb(222, 143, 222); /* Color de fondo */
+    background-color: #ad0d0d; /* Color de fondo */
     color: white;
     border: none;
     border-radius: 10px;
@@ -65,7 +67,7 @@ input[type="submit"], input[type="button"] {
 }
 
 input[type="submit"]:hover, input[type="button"]:hover {
-    background-color: blue; 
+    background-color: rgb(153, 33, 208); 
     transform: scale(1.05);
 }
 
@@ -81,7 +83,7 @@ hr.separator {
 }
 
 p {
-    color: purple;
+    color: rgb(128, 0, 0);
     font-size: 20px;
 }
 /* Modal styles */

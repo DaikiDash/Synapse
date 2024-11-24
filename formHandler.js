@@ -9,13 +9,13 @@ function handleSubmit() {
 
     // Validar que todos los campos están llenos
     if (!username || !email || !password || !repeatPassword) {
-        alert('Please fill in all fields.');
+        alert('¡¡Hacelo Bieeeen!!.');
         return;
     }
 
     // Validar que las contraseñas coincidan
     if (password !== repeatPassword) {
-        alert('Passwords do not match!');
+        alert('Las contraseñas no coinciden xd!');
         return;
     }
 
